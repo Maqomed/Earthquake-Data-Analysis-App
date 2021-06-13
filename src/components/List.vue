@@ -114,9 +114,6 @@ export default {
   mounted() {
     this.showAll();
     this.map.addControl(new mapboxgl.NavigationControl());
-    this.max = this.features[0].properties.mag;
-    this.min = this.features[0].properties.mag;
-    
   },
   methods: {
     showAll() {
