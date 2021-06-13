@@ -92,21 +92,21 @@ export default {
         center: [40.143105, 47.576927],
         zoom: 1,
       }),
-      max: '',
-      min: '',
+      max: -1,
+      min: 10,
     };
   },
   created() {
     this.features = this.earthquakeData;
     for (var i = 0; i < this.features.length; i++) {
-      if (this.features[i].properties.mag > this.max) {
+      if (this.features[i].properties.mag >= this.max) {
         this.max = this.features[i].properties.mag;
         this.indexOfMaxMag = i;
       }
     }
     for (var j = 0; j < this.features.length; j++) {
-      if (this.features[j].properties.mag < this.min) {
-        this.min = this.features[j].properties.mag;
+      if (this.features[j].properties.mag <= this.min) {
+       this.min = this.features[j].properties.mag;
         this.indexOfMinMag = j;
       }
     }
@@ -138,8 +138,7 @@ export default {
         essential: true, // this animation is considered essential with respect to prefers-reduced-motion
       });
     },
-    showOnMapMinMagnitudeZone
-() {
+    showOnMapMinMagnitudeZone() {
       this.clearOldMarkers();
       this.showPopup(this.indexOfMinMag, this.colorOfLowMag);
       this.addNewMarkers();
