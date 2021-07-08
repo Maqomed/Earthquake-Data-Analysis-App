@@ -11,8 +11,7 @@ export default {
 
   data() {
     return {
-      accessToken:
-        process.env.VUE_APP_TOKEN,
+      accessToken: process.env.VUE_APP_TOKEN,
     };
   },
   created() {},

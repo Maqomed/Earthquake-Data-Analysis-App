@@ -2,7 +2,7 @@
   <div class="header text-white shadow-lg">
     <div class="d-flex">
       <img src="../assets/earthquake.png" class="logo" />
-      <h3>EDA - Earthquake Data Analysis </h3>
+      <h3>EDA - Earthquake Data Analysis</h3>
     </div>
   </div>
 </template>

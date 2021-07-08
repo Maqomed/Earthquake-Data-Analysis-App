@@ -106,7 +106,7 @@ export default {
     }
     for (var j = 0; j < this.features.length; j++) {
       if (this.features[j].properties.mag <= this.min) {
-       this.min = this.features[j].properties.mag;
+        this.min = this.features[j].properties.mag;
         this.indexOfMinMag = j;
       }
     }
@@ -115,7 +115,7 @@ export default {
     this.showAll();
     this.map.addControl(new mapboxgl.NavigationControl());
   },
-  
+
   methods: {
     showAll() {
       this.clearOldMarkers();
