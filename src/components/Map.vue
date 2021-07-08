@@ -12,7 +12,7 @@ export default {
   data() {
     return {
       accessToken:
-        "pk.eyJ1IjoibWFoYW1tYWRyOTUiLCJhIjoiY2twa3o2b3AxMDY3ZjJwbzF3cTlibXZhdSJ9.lmN1DVkoOlZP8wLREwMp2w",
+        process.env.VUE_APP_TOKEN,
     };
   },
   created() {},
