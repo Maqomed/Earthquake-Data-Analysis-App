@@ -115,6 +115,7 @@ export default {
     this.showAll();
     this.map.addControl(new mapboxgl.NavigationControl());
   },
+  
   methods: {
     showAll() {
       this.clearOldMarkers();
@@ -196,7 +197,6 @@ export default {
       this.clearOldMarkers();
       for (var k = 0; k < this.features.length; k++) {
         if (this.features[k].properties.mag < 2.5) {
-          console.log(this.features[k].properties.mag)
           this.lowMagnitudeIndexes.push(k);
           numberOfLowMagnitudes++;
         }
