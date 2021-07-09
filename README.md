@@ -1,6 +1,9 @@
 # Project Name
 > EDA-EARTHQUAKE DATA ANALYSIS
 
+# Project Is Deployed on Netlify
+https://earthquakedataanalysis.netlify.app/
+
 ## Table of Contents
 * [General Info](#general-information)
 * [Technologies Used](#technologies-used)
